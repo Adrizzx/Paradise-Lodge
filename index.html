@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Paradise Lodge - Paraíso en la Amazonía</title>
+  <meta name="description" content="Lugar amplio alejado del ruido y el estrés de la ciudad, rodeado del encanto que solo la naturaleza te puede brindar">
+  <meta name="keywords" content="Paradise Lodge, Amazonía, Ecuador, hospedaje, naturaleza, piscina, descanso">
+
+  <!-- Favicons -->
+  <link href="public/images/logo.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="#hero" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="public/images/logo.jpg" alt="Logo" class="logo-img">
+        <h1 class="sitename">Paradise Lodge</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Inicio</a></li>
+          <li><a href="#about">Nosotros</a></li>
+          <li><a href="#amenities">Servicios</a></li>
+          <li><a href="#rooms">Habitaciones</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="container-fluid hero-container" data-aos="fade-up">
+        <div class="row g-0 align-items-center">
+          <div class="col-lg-6 content-col">
+            <div class="content-wrapper">
+              <div class="status-badge">🌴 Reservaciones Abiertas</div>
+              <h2>Tu Paraíso en la Amazonía</h2>
+              <p>Lugar amplio alejado del ruido y el estrés de la ciudad, rodeado del encanto que solo la naturaleza te puede brindar. Lleva a toda la familia a este fantástico lugar en la Amazonía ecuatoriana.</p>
+
+              <div class="opening-hours" data-aos="fade-up" data-aos-delay="500">
+                <i class="bi bi-clock"></i>
+                <span>Disponible 24/7</span>
+              </div>
+
+              <div class="btn-group">
+                <a href="#about" class="btn btn-book">Descubre Más</a>
+                <a href="#rooms" class="btn btn-menu">Ver Habitaciones</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 swiper-col">
+            <div class="swiper hero-swiper init-swiper" data-aos="zoom-out" data-aos-delay="100">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 800,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "effect": "fade",
+                  "slidesPerView": 1,
+                  "navigation": {
+                    "nextEl": ".swiper-button-next",
+                    "prevEl": ".swiper-button-prev"
+                  }
+                }
+              </script>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="img-container">
+                    <img src="public/images/picina2.jpg" alt="Piscina Paradise Lodge">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-container">
+                    <img src="public/images/casa.jpg" alt="Áreas exteriores">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-container">
+                    <img src="public/images/habitacion.jpg" alt="Habitaciones cómodas">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-container">
+                    <img src="public/images/paisaje.jpg" alt="Áreas verdes">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section bg-overlay">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-content">
+              <h3>Acerca del Espacio</h3>
+              <p class="fst-italic">Bienvenidos a nuestro Paraíso en medio de la naturaleza, donde cada visitante puede desconectarse del estrés diario y reconectar con la tranquilidad de la Amazonía.</p>
+
+              <p><strong>Nuestra Misión:</strong> Crear experiencias únicas de hospedaje en armonía con la naturaleza, ofreciendo a nuestros huéspedes un refugio de paz y descanso en el corazón de la Amazonía ecuatoriana, donde pueden renovar su energía y conectar con la biodiversidad.</p>
+
+              <p><strong>Nuestra Visión:</strong> Ser el destino preferido para familias y viajeros que buscan experiencias auténticas en la naturaleza, estableciendo un nuevo estándar en turismo sostenible y hospitalidad amazónica.</p>
+
+              <p><strong>¿Por qué elegirnos?</strong> Porque ofrecemos más que un simple alojamiento: brindamos una experiencia integral con 3 habitaciones acogedoras, piscina de 12m×8m, áreas verdes con árboles frutales, zona BBQ, canchas deportivas y un ambiente donde los sonidos de la selva te acompañan mientras descansas.</p>
+
+              <div class="chef-signature mt-4">
+                <div class="row align-items-center">
+                  <div class="col-auto">
+                    <img src="public/images/logo.jpg" class="chef-avatar rounded-circle" alt="Paradise Lodge">
+                  </div>
+                  <div class="col">
+                    <p class="chef-message mb-2">"Rodeados de naturaleza, ofrecemos el lugar ideal para desconectarse de la rutina diaria y del estrés de la ciudad."</p>
+                    <p class="chef-name">Equipo Paradise Lodge</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="about-image-wrapper">
+              <img src="public/images/picina.jpg" class="img-fluid main-image shadow" alt="Piscina Paradise Lodge">
+              
+              <span class="establishment-year d-flex align-items-center justify-content-center text-center">Relájate</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5 pt-4 features-section">
+          <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-box">
+              <div class="feature-icon">
+                <i class="bi bi-house-heart"></i>
+              </div>
+              <h4>Alojamiento Completo</h4>
+              <p>Residencia completa con 3 habitaciones, 3 baños, cocina equipada y todas las comodidades para 10 huéspedes.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-box">
+              <div class="feature-icon">
+                <i class="bi bi-water"></i>
+              </div>
+              <h4>Piscina Privada</h4>
+              <p>Piscina amplia de 12m×8m×1.6m ideal para días soleados, perfecta para disfrutar con familia y amigos.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="feature-box">
+              <div class="feature-icon">
+                <i class="bi bi-tree"></i>
+              </div>
+              <h4>Entorno Natural</h4>
+              <p>Áreas verdes con gran variedad de plantas y árboles frutales de la zona que generan paz y tranquilidad.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="feature-box">
+              <div class="feature-icon">
+                <i class="bi bi-activity"></i>
+              </div>
+              <h4>Actividades Deportivas</h4>
+              <p>Canchas de fútbol y volley, área BBQ con parrilla, 6 hamacas con vista a la piscina y áreas verdes.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+            <div class="stats-container">
+              <div class="stat-item">
+                <span class="stat-number">2+</span>
+                <p class="stat-label">Años de experiencia</p>
+              </div>
+
+              <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <p class="stat-label">Huéspedes</p>
+              </div>
+
+              <div class="stat-item">
+                <span class="stat-number">1000+</span>
+                <p class="stat-label">Reservas</p>
+              </div>
+
+              <div class="stat-item">
+                <span class="stat-number">1000+</span>
+                <p class="stat-label">Clientes felices</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- /About Section -->
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="amenities section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Servicios y Comodidades</h2>
+        <p>Descubre todo lo que Paradise Lodge tiene para ofrecerte durante tu estadía en la Amazonía ecuatoriana.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          
+          <!-- Sala -->
+          <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="amenity-category">
+              <h4><i class="bi bi-tv"></i> Sala de Estar</h4>
+              <div class="amenity-list">
+                <div class="amenity-item">
+                  <i class="bi bi-tv"></i>
+                  <span>Smart TV</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="bi bi-wind"></i>
+                  <span>Ventilador de techo</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="bi bi-music-note"></i>
+                  <span>Sistema de sonido</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="bi bi-person-arms-up"></i>
+                  <span>2 sofás cama</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cocina -->
+          <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="amenity-category">
+              <h4><i class="bi bi-cup-hot"></i> Cocina Completa</h4>
+              <div class="amenity-list">
+                <div class="amenity-item">
+                  <i class="bi bi-cup-hot"></i>
+                  <span>Cafetera</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="bi bi-droplet"></i>
+                  <span>Jarra eléctrica</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="bi bi-square"></i>
+                  <span>Horno</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="bi bi-cup-straw"></i>
+                  <span>Licuadora</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="bi bi-box"></i>
+                  <span>Microondas</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="bi bi-bowl"></i>
+                  <span>Vajilla para 12 personas</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Habitaciones -->
+          <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="amenity-category">
+              <h4><i class="bi bi-house-door"></i> Habitaciones</h4>
+              <div class="amenity-list">
+                <div class="amenity-item">
+                  <i class="bi bi-door-open"></i>
+                  <span>3 habitaciones acogedoras</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="bi bi-droplet"></i>
+                  <span>3 baños con agua caliente</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="bi bi-wind"></i>
+                  <span>Ventiladores en cada habitación</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="bi bi-archive"></i>
+                  <span>Armarios y veladores</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="bi bi-moon"></i>
+                  <span>Cortinas opacas</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="bi bi-hospital"></i>
+                  <span>Ropa de cama incluida</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Baños -->
+          <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="amenity-category">
+              <h4><i class="bi bi-droplet"></i> Baños Completos</h4>
+              <div class="amenity-list">
+                <div class="amenity-item">
+                  <i class="bi bi-thermometer-sun"></i>
+                  <span>Agua caliente</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="bi bi-bottle"></i>
+                  <span>Shampoo incluido</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="bi bi-heart"></i>
+                  <span>Acondicionador</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="bi bi-soap"></i>
+                  <span>Jabón corporal</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Áreas Exteriores -->
+          <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="amenity-category">
+              <h4><i class="bi bi-tree"></i> Áreas Exteriores</h4>
+              <div class="amenity-list">
+                <div class="amenity-item">
+                  <i class="bi bi-water"></i>
+                  <span>Piscina 12m×8m×1.6m</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="bi bi-car-front"></i>
+                  <span>Estacionamiento gratuito</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="bi bi-door-open"></i>
+                  <span>Entrada privada</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="bi bi-droplet"></i>
+                  <span>Regadera exterior</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="bi bi-cup-hot"></i>
+                  <span>Área BBQ equipada</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="bi bi-fire"></i>
+                  <span>Lugar para fogata</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Servicios Adicionales -->
+          <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="amenity-category">
+              <h4><i class="bi bi-star"></i> Servicios Especiales</h4>
+              <div class="amenity-list">
+                <div class="amenity-item">
+                  <i class="bi bi-wifi"></i>
+                  <span>WiFi gratuito</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="bi bi-cup-hot"></i>
+                  <span>Guayusa o Jamaica gratis</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="bi bi-droplet"></i>
+                  <span>Botellón de agua gratis</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="bi bi-map"></i>
+                  <span>Guía turística local</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="bi bi-moon"></i>
+                  <span>6 hamacas con vista</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="bi bi-trophy"></i>
+                  <span>Canchas deportivas</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /Amenities Section -->
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="menu section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Nuestras Habitaciones</h2>
+        <p>Descubre nuestras 3 habitaciones acogedoras, cada una diseñada para brindarte el máximo confort en tu estadía amazónica.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="menu-filters isotope-filters mb-5">
+            <ul>
+              <li data-filter="*" class="filter-active">🌿 Comodidad en la Naturaleza</li>
+            </ul>
+          </div>
+
+          <div class="menu-container isotope-container row gy-4">
+
+            <!-- Habitación 1 - Matrimonial -->
+            <div class="col-lg-4 isotope-item filter-habitacion">
+              <div class="menu-item card shadow-sm p-3 mb-4 rounded-4 bg-dark">
+                <img src="public/images/habitacion.jpg" style="width: 100%; height: 300px; object-fit: cover;" alt="Habitación Matrimonial" class="menu-img img-fluid rounded-3 mb-3">
+                <div class="menu-content text-white">
+                  <h5 class="mb-1">Habitación Matrimonial</h5>
+                  <p class="text-light mb-2">Habitación 1 - Paradise Lodge</p>
+                  <div class="d-flex align-items-center justify-content-between mb-2 text-light small">
+                    <span><i class="bi bi-people"></i> 2 personas</span>
+                    <span><i class="bi bi-bed"></i> 1 cama matrimonial</span>
+                    <span><i class="bi bi-droplet"></i> Baño privado</span>
+                  </div>
+                  <div class="amenity-list-small mb-2">
+                    <small class="text-light">
+                      <i class="bi bi-check2"></i> Ventilador de techo
+                      <i class="bi bi-check2"></i> Armario
+                      <i class="bi bi-check2"></i> Agua caliente
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Habitación 2 - Litera -->
+            <div class="col-lg-4 isotope-item filter-habitacion">
+              <div class="menu-item card shadow-sm p-3 mb-4 rounded-4 bg-dark">
+                <img src="public/images/litera.jpg" style="width: 100%; height: 300px; object-fit: cover;" alt="Habitación con Litera 1" class="menu-img img-fluid rounded-3 mb-3">
+                <div class="menu-content text-white">
+                  <h5 class="mb-1">Habitación Litera 1</h5>
+                  <p class="text-light mb-2">Habitación 2 - Paradise Lodge</p>
+                  <div class="d-flex align-items-center justify-content-between mb-2 text-light small">
+                    <span><i class="bi bi-people"></i> 3 personas</span>
+                    <span><i class="bi bi-bed"></i> Litera especial</span>
+                    <span><i class="bi bi-droplet"></i> Baño privado</span>
+                  </div>
+                  <div class="amenity-list-small mb-2">
+                    <small class="text-light">
+                      <i class="bi bi-check2"></i> Cama 2 plazas abajo
+                      <i class="bi bi-check2"></i> Cama 1½ plazas arriba
+                      <i class="bi bi-check2"></i> Cortinas opacas
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Habitación 3 - Litera -->
+            <div class="col-lg-4 isotope-item filter-habitacion">
+              <div class="menu-item card shadow-sm p-3 mb-4 rounded-4 bg-dark">
+                <img src="public/images/litera2" style="width: 100%; height: 300px; object-fit: cover;" alt="Habitación con Litera 2" class="menu-img img-fluid rounded-3 mb-3">
+                <div class="menu-content text-white">
+                  <h5 class="mb-1">Habitación Litera 2</h5>
+                  <p class="text-light mb-2">Habitación 3 - Paradise Lodge</p>
+                  <div class="d-flex align-items-center justify-content-between mb-2 text-light small">
+                    <span><i class="bi bi-people"></i> 3 personas</span>
+                    <span><i class="bi bi-bed"></i> Litera especial</span>
+                    <span><i class="bi bi-droplet"></i> Baño privado</span>
+                  </div>
+                  <div class="amenity-list-small mb-2">
+                    <small class="text-light">
+                      <i class="bi bi-check2"></i> Cama 2 plazas abajo
+                      <i class="bi bi-check2"></i> Cama 1½ plazas arriba
+                      <i class="bi bi-check2"></i> Espacio de almacenamiento
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Área Común - Sofás Cama -->
+            <div class="col-lg-6 isotope-item filter-habitacion">
+              <div class="menu-item card shadow-sm p-3 mb-4 rounded-4 bg-dark">
+                <img src="public/images/sala.jpg" style="width: 100%; height: 300px; object-fit: cover;" alt="Sala con Sofás Cama" class="menu-img img-fluid rounded-3 mb-3">
+                <div class="menu-content text-white">
+                  <h5 class="mb-1">Área Común - Sofás Cama</h5>
+                  <p class="text-light mb-2">Espacio adicional - Paradise Lodge</p>
+                  <div class="d-flex align-items-center justify-content-between mb-2 text-light small">
+                    <span><i class="bi bi-people"></i> 3 personas</span>
+                    <span><i class="bi bi-bed"></i> 2 sofás cama</span>
+                    <span><i class="bi bi-tv"></i> Smart TV</span>
+                  </div>
+                  <div class="amenity-list-small mb-2">
+                    <small class="text-light">
+                      <i class="bi bi-check2"></i> Ventilador de techo
+                      <i class="bi bi-check2"></i> Sistema de sonido
+                      <i class="bi bi-check2"></i> Espacio amplio
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Área de Hamacas -->
+            <div class="col-lg-6 isotope-item filter-habitacion">
+              <div class="menu-item card shadow-sm p-3 mb-4 rounded-4 bg-dark">
+                <img src="public/images/casa.jpg" style="width: 100%; height: 300px; object-fit: cover;" alt="Área de Hamacas" class="menu-img img-fluid rounded-3 mb-3">
+                <div class="menu-content text-white">
+                  <h5 class="mb-1">Área de Hamacas</h5>
+                  <p class="text-light mb-2">Zona de descanso - Paradise Lodge</p>
+                  <div class="d-flex align-items-center justify-content-between mb-2 text-light small">
+                    <span><i class="bi bi-people"></i> 6 hamacas</span>
+                    <span><i class="bi bi-eye"></i> Vista a piscina</span>
+                    <span><i class="bi bi-tree"></i> Áreas verdes</span>
+                  </div>
+                  <div class="amenity-list-small mb-2">
+                    <small class="text-light">
+                      <i class="bi bi-check2"></i> Segundo piso
+                      <i class="bi bi-check2"></i> Vista panorámica
+                      <i class="bi bi-check2"></i> Ambiente natural
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section><!-- /Rooms Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contacto y Ubicación</h2>
+        <p>Estamos ubicados en Tena, Ecuador, en el corazón de la Amazonía. Contáctanos para reservar tu estadía en el paraíso.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+          
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="contact-info">
+              <h3 class="mb-4">Información de Contacto</h3>
+              
+              <div class="contact-item">
+                <i class="bi bi-geo-alt"></i>
+                <div>
+                  <h4>Ubicación</h4>
+                  <p>Tena, Napo, Ecuador<br>
+                  Corazón de la Amazonía Ecuatoriana</p>
+                </div>
+              </div>
+
+              
+
+              <div class="contact-item">
+                <i class="bi bi-clock"></i>
+                <div>
+                  <h4>Horario de Atención</h4>
+                  <p>Lunes - Domingo: 24/7<br>
+                  Siempre disponibles para ti</p>
+                </div>
+              </div>
+
+              <div class="social-links">
+                <a href="https://www.instagram.com/paradiselodge20/?igsh=bWRqOGZmdHlvMDJl" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                
+                <a href="https://www.airbnb.mx/rooms/1065213408463732570?viralityEntryPoint=1&s=76">
+                  <i class="bi bi-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+  <div class="contact-info">
+    <h3 class="mb-4">¿Por qué Paradise Lodge?</h3>
+    
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <div class="feature-box-compact">
+          <div class="feature-icon-small">
+            <i class="bi bi-heart"></i>
+          </div>
+          <h5>Experiencia Única</h5>
+          <p>Más que un hospedaje, ofrecemos una experiencia integral en la naturaleza amazónica con todas las comodidades modernas.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <div class="feature-box-compact">
+          <div class="feature-icon-small">
+            <i class="bi bi-people"></i>
+          </div>
+          <h5>Perfecto para Familias</h5>
+          <p>Espacio ideal para hasta 10 huéspedes con actividades para todas las edades: piscina, canchas deportivas y áreas verdes.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <div class="feature-box-compact">
+          <div class="feature-icon-small">
+            <i class="bi bi-star"></i>
+          </div>
+          <h5>Servicios Incluidos</h5>
+          <p>Bebidas locales de cortesía, agua gratis, guía turística, artículos de aseo y todo lo necesario para tu comodidad.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <div class="feature-box-compact">
+          <div class="feature-icon-small">
+            <i class="bi bi-shield-check"></i>
+          </div>
+          <h5>Tranquilidad Garantizada</h5>
+          <p>Lugar seguro y alejado del ruido urbano, rodeado de naturaleza y con entrada privada para tu privacidad.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <!-- Footer -->
+<footer id="footer" class="footer">
+  <div class="container text-center py-4">
+    <p>© Copyright <strong class="px-1 sitename">Paradise Lodge</strong> - Todos los derechos reservados.</p>
+    <p class="mb-0">🌴 Tu Paraíso en la Amazonía Ecuatoriana | Tena, Ecuador</p>
+    <div class="social-links mt-3">
+      <a href="https://www.instagram.com/paradiselodge20/?igsh=bWRqOGZmdHlvMDJl" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://www.airbnb.mx/rooms/1065213408463732570?viralityEntryPoint=1&s=76" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-chat-dots"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="main.js"></script>
+
+</body>
+</html>
